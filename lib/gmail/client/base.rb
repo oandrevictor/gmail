@@ -237,9 +237,11 @@ module Gmail
           :password => password,
           :authentication => 'plain',
           :enable_starttls_auto => true,
-          open_timeout: 120,
-          read_timeout: 120
-        }]
+          :open_timeout => 120,
+          :read_timeout => 120
+        },
+        :open_timeout => 120,
+        :read_timeout => 120]
       end
     end # Base
   end # Client
